@@ -1,0 +1,3 @@
+limpar inputs depois de inserir
+resetar button (por disable)
+verificar se o username já existe

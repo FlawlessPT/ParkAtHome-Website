@@ -1,0 +1,58 @@
+:root {
+	--corPrimary: #0a48ad;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+#logo {
+	margin: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+.navbar {
+	background-color: var(--corPrimary);
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-item {
+	color: white;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+	font-family: 'Poppins', sans-serif;
+}
+
+#team-me {
+	font-size: 25px;
+}
+
+#role-me {
+	text-decoration: underline; 
+}
+
+.vl {
+	margin-right: 10px;
+	border-left: 1px solid black;
+	height: 100px;
+}
+
+.card {
+	padding: 15px;
+}
