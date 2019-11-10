@@ -50,8 +50,8 @@
                             <i class="fa fa-user"></i> Conta
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">> Login</a>
-                            <a class="dropdown-item" href="#">> Register</a>
+                            <a class="dropdown-item" href="../Register/index.php">> Login</a>
+                            <a class="dropdown-item" href="../Login/index.php">> Register</a>
                         </div>
                     </li>
                 </ul>
