@@ -12,26 +12,28 @@
 </head>
 
 <body>
-    <div class="jumbotron" style="margin-bottom: 0;">
-        <div class="container" id="footer">
+    <footer id="sticky-footer" class="py-4 bg-secondary text-white">
+        <div class="container">
             <div class="row">
-                <div class="vl"></div>
-                <div class="col-sm">
-                    <h3>Contactos: </h3>
-                    <h5>999 888 777</h5>
+                <div class="col-sm-4">
+                    <!-- <div class="vl"></div> -->
+                    <h4>Contactos: </h4>
+                    <hr class="bg-light">
+                    <h6>999 888 777</h6>
                 </div>
-                <div class="vl">
+                <div class="col-sm-4">
+                    <!-- <div class="vl"></div> -->
+                    <h4>Email:</h4>
+                    <hr class="bg-light">
+                    <h6>contacto@parkathome.pt</h6>
                 </div>
-                <div class="col-sm">
-                    <h3>Email:</h3>
-                    <h5>contacto@parkathome.pt</h5>
-                </div>
-                <div class="vl"></div>
-                <div class="col-sm">
-                    <h3>Desenvolvedor:</h3>
-                    <b style="font-size: 20px">João Sousa</b> - <a href="https://www.flawless.pt" style="font-size: 20px">flawless.pt</a>
+                <div class="col-sm-4">
+                    <!-- <div class="vl"></div> -->
+                    <h4>Desenvolvedor:</h4>
+                    <hr class="bg-light">
+                    <h6><b>João Sousa</b> - <a style="color: blue" href="https://linktr.ee/flawlessyasuo">Click to know me better!</a></h6>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
