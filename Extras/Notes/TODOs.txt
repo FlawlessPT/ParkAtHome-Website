@@ -1,0 +1,12 @@
+SOLVED: terminar o menu e o footer na p�gina de registar
+SOLVED: substituir os menus e os footers por includes em todos os sites
+SOLVED: acabar a area do register para registar na base de dados
+SOLVED: limpar inputs depois de inserir
+SOLVED: resetar button (por disable)
+SOLVED: fix navbar collapse button
+TODO: Fix login page
+TODO: Fix Register page
+SOLVED: Add a login page, a register page
+    TODO: verificar se o username já existe
+    TODO: encriptar a password para md5 ao registar
+TODO: Add a profile page

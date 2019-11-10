@@ -1,4 +1,0 @@
-solved: terminar o menu e o footer na página de registar
-solved: substituir os menus e os footers por includes em todos os sites
-todo: acabar a area do register para registar na base de dados
-todo: encriptar a password para md5 ao registar
