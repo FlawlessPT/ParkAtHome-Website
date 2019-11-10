@@ -1,0 +1,153 @@
+:root {
+	--corPrimary: #0a48ad;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+	margin: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+.navbar {
+	background-color: var(--corPrimary);
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-item {
+	color: white;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-item:hover {
+	color: white;
+}
+
+.navbar-brand {
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-item dropdown {
+	align-content: flex-end;
+	background-color: #0a48ad;
+}
+
+#footer {
+	margin-bottom: 0;
+}
+
+.vl {
+	border-left: 1px solid black;
+	height: 100px;
+}
+
+#registar {
+	padding-top: 17px;
+}
+
+/* CHECK HERE */
+#name_icon {
+	width: 20px;
+}
+#email_icon {
+	width: 20px;
+}
+#phone_number_icon {
+	width: 20px;
+}
+#nif_icon {
+	width: 20px;
+}
+#username_icon {
+	width: 20px;
+}
+#password_icon {
+	width: 20px;
+}
+#mat1_icon {
+	width: 20px;
+}
+#mat2_icon {
+	width: 20px;
+}
+#mat3_icon {
+	width: 20px;
+}
+#mat4_icon {
+	width: 20px;
+}
+
+#errorMessage {
+	margin-top: 2px;
+	color: white;
+}
+
+/*LOGIN */
+
+.user_card {
+	height: 770px;
+	width: 350px;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: #0a48ad;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 #0a48ad;
+	-webkit-box-shadow: 0 4px 8px 0 #0a48ad;
+	-moz-box-shadow: 0 4px 8px 0 #0a48ad;
+	border-radius: 5px;
+}
+.brand_logo_container {
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	top: -75px;
+	border-radius: 50%;
+	padding: 10px;
+	text-align: center;
+}
+.brand_logo {
+	height: 150px;
+	width: 150px;
+}
+.form_container {
+	margin-top: 80px;
+}
+.login_btn {
+	margin-top: 10px;
+	width: 100%;
+	background: #FFCC00 !important;
+	color: #0a48ad !important;
+}
+.login_btn:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+.login_container {
+	padding: 0 2rem;
+}
+.input-group-text {
+	background: #FFCC00 !important;
+	color: #0a48ad !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user, .input_pass:focus {
+	box-shadow: none !important;
+	outline: 1px !important;
+}
+
+/* .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+	background-color: gray !important;
+} */
