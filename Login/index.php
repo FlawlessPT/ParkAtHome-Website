@@ -22,7 +22,6 @@
     <script type="text/javascript" charset="utf-8"></script>
 
     <!-- OWN CSS -->
-
     <link rel="stylesheet" href="main_register.css">
 
     <script>
