@@ -21,80 +21,18 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../Menu/navbar.css?v=1.1">
-    <link rel="stylesheet" href="main_register.css?v=1.1">
+    <link rel="stylesheet" href="main_register.css?v=1.2">
 
-    <script>
-        function verificar() {
-            var nome = document.getElementById("nome").value;
-            var email = document.getElementById("email").value;
-            var numeroTelefone = document.getElementById("numeroTelefone").value;
-            var nif = document.getElementById("nif").value;
-            var nomeUtilizador = document.getElementById("nomeUtilizador").value;
-            var password = document.getElementById("password").value;
-            var matricula1 = document.getElementById('matricula1').value;
-            var matricula2 = document.getElementById('matricula2').value;
-            var matricula3 = document.getElementById('matricula3').value;
-            var matricula4 = document.getElementById('matricula4').value;
-            var registerButton = document.getElementById('registerButton');
-            var errorMessage = document.getElementById('errorMessage');
-
-            if (nome != "" && email != "" && numeroTelefone != "" && nif != "" && nomeUtilizador != "" && password != "" && matricula1 != "") {
-                errorMessage.style.display = "none";
-                registerButton.disabled = false;
-            } else {
-                errorMessage.style.display = "block";
-                registerButton.disabled = true;
-            }
-        }
-
-        function inserir() {
-            var nome = document.getElementById("nome").value;
-            var email = document.getElementById("email").value;
-            var numeroTelefone = document.getElementById("numeroTelefone").value;
-            var nif = document.getElementById("nif").value;
-            var nomeUtilizador = document.getElementById("nomeUtilizador").value;
-            var password = document.getElementById("password").value;
-            var matricula1 = document.getElementById('matricula1').value;
-            var matricula2 = document.getElementById('matricula2').value;
-            var matricula3 = document.getElementById('matricula3').value;
-            var matricula4 = document.getElementById('matricula4').value;
-
-            var registerButton = document.getElementById('registerButton');
-            var errorMessage = document.getElementById('errorMessage');
-
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    alert(this.responseText);
-                    document.getElementById("nome") = '';
-                    document.getElementById("email") = '';
-                    document.getElementById("numeroTelefone") = '';
-                    document.getElementById("nif") = '';
-                    document.getElementById("nomeUtilizador") = '';
-                    document.getElementById("password") = '';
-                    document.getElementById('matricula1') = '';
-                    document.getElementById('matricula2') = '';
-                    document.getElementById('matricula3') = '';
-                    document.getElementById('matricula4') = '';
-                }
-            };
-            xhttp.open("GET", "register.php?nome=" + nome + "&email=" + email + "&numeroTelefone=" + numeroTelefone + "&nif=" + nif + "&nomeUtilizador=" + nomeUtilizador + "&password=" + password + "&matricula1=" + matricula1 + "&matricula2=" + matricula2 + "&matricula3=" + matricula3 + "&matricula4=" + matricula4, true);
-            xhttp.send();
-        }
-
-        function esconder() {
-            var registerButton = document.getElementById('registerButton');
-            var errorMessage = document.getElementById('errorMessage');
-            errorMessage.style.display = "none";
-            registerButton.disabled = true;
-        }
-    </script>
+    <!-- PAGE FUNCTIONS -->
+    <script src="register.js"></script>
 </head>
 
 <body onload="esconder()">
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
-    <div class="container" style="margin-top: 150px; margin-bottom: 219px">
+    <div class="container" style="margin-top: 100px; margin-bottom: 219px">
+        <h3>Registar Conta: </h3>
+        <hr>
         <div class="row">
             <div class="col-lg-7">
                 <div class="input-group mb-3">
@@ -166,7 +104,7 @@
                     Preencha todos os campos!
                 </b>
                 <div class="d-flex justify-content-end">
-                    <button class="btn bg-warning w-25 mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
+                    <button class="btn bg-info w-25 mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
                 </div>
             </div>
         </div>
