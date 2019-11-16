@@ -96,7 +96,7 @@
     <?php include '../Menu/menu.php'; ?>
     <div class="container" style="margin-top: 150px; margin-bottom: 219px">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-lg-7">
                 <div class="input-group mb-3">
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-user" id="name_icon"></i></span>
@@ -146,7 +146,7 @@
                     <input type="text" onchange="verificar()" name="matricula4" id="matricula4" class="form-control input_pass" placeholder="Matricula 4" maxlength="8">
                 </div>
             </div>
-            <div class="col-sm-5">
+            <div class="col-lg-5">
                 <div class="input-group mb-3">
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-user" id="username_icon"></i></span>
