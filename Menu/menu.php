@@ -29,8 +29,8 @@
                         <i class="fa fa-user"></i> Conta
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="../Login/index.php">> Login</a>
-                        <a class="dropdown-item" href="../Register/index.php">> Register</a>
+                        <a class="dropdown-item" href="../Login/index.php">> Iniciar Sessão</a>
+                        <a class="dropdown-item" href="../Register/index.php">> Registar</a>
                     </div>
                 </li>
             </ul>
