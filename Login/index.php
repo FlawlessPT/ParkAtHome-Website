@@ -31,7 +31,7 @@
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <!-- CONTENT -->
-    <div class="container" style="margin-top: 150px; margin-bottom: 296px">
+    <div class="container" style="margin-top: 100px; margin-bottom: 346px">
         <div class="d-flex justify-content-center">
             <div class="card" style="width: 380px; padding-left: 25px; padding-right: 25px; padding-top: 20px">
                 <h3 class="card-title text-center mt-3">Iniciar Sessão: </h3>

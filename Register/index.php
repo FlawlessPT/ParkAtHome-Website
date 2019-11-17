@@ -104,7 +104,7 @@
                     Preencha todos os campos!
                 </b>
                 <div class="d-flex justify-content-end">
-                    <button class="btn bg-info w-25 mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
+                    <button class="btn bg-info mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
                 </div>
             </div>
         </div>
