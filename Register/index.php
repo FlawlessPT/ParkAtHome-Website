@@ -21,16 +21,16 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../Menu/navbar.css?v=1.1">
-    <link rel="stylesheet" href="main_register.css?v=1.2">
+    <link rel="stylesheet" href="main_register.css?v=1.3">
 
     <!-- PAGE FUNCTIONS -->
-    <script src="register.js"></script>
+    <script src="register.js?v=1.1"></script>
 </head>
 
 <body onload="esconder()">
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
-    <div class="container" style="margin-top: 100px; margin-bottom: 219px">
+    <div class="container" style="margin-top: 100px">
         <h3>Registar Conta: </h3>
         <hr>
         <div class="row">
@@ -100,11 +100,14 @@
                 <b class="d-flex justify-content-end" style="color: black">
                     * obrigatório
                 </b>
-                <b class="text-center text-black" id="errorMessage">
+                <b class="text-right" style="color: red; text-decoration: underline;" id="errorMessage">
                     Preencha todos os campos!
                 </b>
                 <div class="d-flex justify-content-end">
                     <button class="btn bg-info mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
+                </div>
+                <div class="text-center mt-3">
+                    <span class="forgot-password">Já possui conta? Inicie sessão <a href="../Login/">aqui</a>.</span>
                 </div>
             </div>
         </div>

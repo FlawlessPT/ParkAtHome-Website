@@ -37,19 +37,24 @@ function inserir() {
     var errorMessage = document.getElementById('errorMessage');
 
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
-            document.getElementById("nome") = '';
-            document.getElementById("email") = '';
-            document.getElementById("numeroTelefone") = '';
-            document.getElementById("nif") = '';
-            document.getElementById("nomeUtilizador") = '';
-            document.getElementById("password") = '';
-            document.getElementById('matricula1') = '';
-            document.getElementById('matricula2') = '';
-            document.getElementById('matricula3') = '';
-            document.getElementById('matricula4') = '';
+            if (this.responseText == 1) {
+                window.location.href = "accountCreated.php"
+                document.getElementById("nome") = '';
+                document.getElementById("email") = '';
+                document.getElementById("numeroTelefone") = '';
+                document.getElementById("nif") = '';
+                document.getElementById("nomeUtilizador") = '';
+                document.getElementById("password") = '';
+                document.getElementById('matricula1') = '';
+                document.getElementById('matricula2') = '';
+                document.getElementById('matricula3') = '';
+                document.getElementById('matricula4') = '';
+            }
+            else {
+                alert("Verifique os dados, algum dos dados já se encontra registado!")
+            }
         }
     };
     xhttp.open("GET", "register.php?nome=" + nome + "&email=" + email + "&numeroTelefone=" + numeroTelefone + "&nif=" + nif + "&nomeUtilizador=" + nomeUtilizador + "&password=" + password + "&matricula1=" + matricula1 + "&matricula2=" + matricula2 + "&matricula3=" + matricula3 + "&matricula4=" + matricula4, true);

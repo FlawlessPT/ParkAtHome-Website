@@ -33,14 +33,14 @@
     <div class="container">
         <br>
         <h1 id="objetivos">Sobre</h1>
-        <hr>
+        <hr class="bg-secondary">
         <h3 id="objetivos">Objetivos</h3>
         <p>Park@Home é uma aplicação desenvolvida como projeto final escolar. Porém, tem como futuro
             objetivo, entrar em funcionamento no mundo real.</p>
         <br>
-        <h3 class="text-center">Team Park@Home</h3>
+        <h3 class="text-left">Team Park@Home</h3>
         <br>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-left">
             <div class="row">
                 <div class="card" width="512px" height="512px" style="background-color: lightblue;">
                     <img src="../Imagens/bby-me-final.png" class="img-fluid" alt="João Sousa">
@@ -50,21 +50,21 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="bg-secondary">
         <h1 id="download">Download</h1>
-        <hr>
+        <hr class="bg-secondary">
         <a href="app-debug.apk" download>
             <img src="../Imagens/Download.png" width="100px" height="100px" class="img-fluid" alt="Download">
         </a>
-        <hr>
+        <hr class="bg-secondary">
         <h1 id="source">Source</h1>
-        <hr>
+        <hr class="bg-secondary">
         <a href="https://www.github.com/FlawlessPT/ParkAtHome" type="menu">Ver Aqui</a>
         <br>
     </div>
     <!-- </div> -->
     <br>
-    <?php include '../Footer/footer.php'; ?>
+    <?php include '../Footer/footer2.php'; ?>
 </body>
 
 </html>

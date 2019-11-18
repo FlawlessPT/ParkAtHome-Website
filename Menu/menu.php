@@ -23,17 +23,62 @@
                     <a class="nav-link" id="source" href="../Inicio/index.php#source">Source</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="dropdown">
-                    <button class="nav-link nav-item btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user"></i> Conta
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="../Login/index.php">> Iniciar Sessão</a>
-                        <a class="dropdown-item" href="../Register/index.php">> Registar</a>
-                    </div>
-                </li>
-            </ul>
+            <?php
+
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "ParkAtHome";
+
+            // Cria a ligação à BD
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
+            // Verifica se a ligação falhou (ou teve sucesso)
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+
+            session_start();
+
+            if (isset($_SESSION['userName'])) {
+                echo session_status() . "-1";
+
+                $loggedUser = $_SESSION['userName'];
+
+                $sql = "SELECT Nome FROM utilizadores WHERE NomeUtilizador='$loggedUser'";
+                $result = mysqli_query($conn, $sql);
+
+                if ($result && mysqli_num_rows($result) > 0) {
+                    if ($row = mysqli_fetch_assoc($result)) {
+                        $personName = $row['Nome'];
+                    }
+                }
+                echo '<ul class="navbar-nav ml-auto">
+                        <li class="dropdown">
+                            <button class="nav-link nav-item btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i> ' . $personName . '
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <b class="dropdown-header" style="font-size: 15px"> ' . strtoupper($loggedUser) . '</i></b>
+                                <a class="dropdown-item" href="../Profile/index.php">> Perfil <i class="fas fa-user"></i></a>
+                                <a class="dropdown-item" href="../Utils/logout.php">> Sair <i class="fas fa-sign-out-alt"></i></a>
+                            </div>
+                        </li>
+                    </ul>';
+            } else {
+                echo session_status() . "-2";
+                echo '<ul class="navbar-nav ml-auto">
+                        <li class="dropdown">
+                            <button class="nav-link nav-item btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i> Conta
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="../Login/index.php">> Iniciar Sessão <i class="fas fa-sign-in-alt"></i></a>
+                                <a class="dropdown-item" href="../Register/index.php">> Registar Conta <i class="fas fa-plus"></i></a>
+                            </div>
+                        </li>
+                    </ul>';
+            }
+            ?>
         </div>
     </div>
 </nav>

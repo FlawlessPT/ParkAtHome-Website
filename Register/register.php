@@ -9,7 +9,7 @@
     $nif = $_GET['nif'];
     $telefone = $_GET['numeroTelefone'];
     $nomeUtilizador = $_GET['nomeUtilizador'];
-    $pw = $_GET['password'];
+    $pw = sha1($_GET['password']);
     $matricula1 = $_GET['matricula1'];
     $matricula2 = $_GET['matricula2'];
     $matricula3 = $_GET['matricula3'];
@@ -28,9 +28,10 @@
         VALUES ('$matricula1', '$matricula2', '$matricula3', '$matricula4', '$nomeUtilizador')";
  
     if (mysqli_query($conn, $sql) && mysqli_query($conn, $sql2)) {
-        echo "Registo efetuado com sucesso!";
-    } else {
-        echo "Verifique os dados, algum dos dados já se encontra registado!";
+        echo true;
+    }
+    else {
+        echo false;
     }
  
     mysqli_close($conn);
