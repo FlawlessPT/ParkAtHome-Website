@@ -40,8 +40,6 @@
             session_start();
 
             if (isset($_SESSION['userName'])) {
-                echo session_status() . "-1";
-
                 $loggedUser = $_SESSION['userName'];
 
                 $sql = "SELECT Nome FROM utilizadores WHERE NomeUtilizador='$loggedUser'";
@@ -65,7 +63,6 @@
                         </li>
                     </ul>';
             } else {
-                echo session_status() . "-2";
                 echo '<ul class="navbar-nav ml-auto">
                         <li class="dropdown">
                             <button class="nav-link nav-item btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
