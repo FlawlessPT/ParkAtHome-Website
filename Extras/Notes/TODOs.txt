@@ -4,9 +4,11 @@ SOLVED: acabar a area do register para registar na base de dados
 SOLVED: limpar inputs depois de inserir
 SOLVED: resetar button (por disable)
 SOLVED: fix navbar collapse button
-TODO: Fix login page
+SOLVED: Fix login page
 SOLVED: Fix Register page
 SOLVED: Add a login page, a register page
-    TODO: verificar se o username já existe
-    TODO: encriptar a password para md5 ao registar
-TODO: Add a profile page
+    SOLVED: verificar se o username já existe
+    SOLVED: encriptar a password para SHA1 ao registar
+SOLVED: Add a profile page
+TODO: Finish profile page
+TODO: Decrypt passwords on APP

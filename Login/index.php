@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,17 +20,16 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../Menu/navbar.css?v=1.1">
-    <link rel="stylesheet" href="main_login.css?v=1.2">
+    <link rel="stylesheet" href="main_login.css?v=1.3">
 
     <!-- PAGE FUNCTIONS -->
-    <script src="login.js"></script>
+    <script src="login.js?v=1.1"></script>
 </head>
-
-<body onload="">
+<body onload="hide()">
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <!-- CONTENT -->
-    <div class="container" style="margin-top: 100px; margin-bottom: 346px">
+    <div class="container" style="margin-top: 100px;">
         <div class="d-flex justify-content-center">
             <div class="card" style="width: 380px; padding-left: 25px; padding-right: 25px; padding-top: 20px">
                 <h3 class="card-title text-center mt-3">Iniciar Sessão: </h3>
@@ -41,22 +39,25 @@
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fas fa-user" id="username_icon"></i></span>
                         </div>
-                        <input type="text" onchange="verificar()" name="nomeUtilizador" id="nomeUtilizador" class="form-control" placeholder="Nome Utilizador" maxlength="255">
+                        <input type="text" onchange="verificar()" id="nomeUtilizador" class="form-control" placeholder="Nome Utilizador" maxlength="255">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fas fa-key" id="password_icon"></i></span>
                         </div>
-                        <input type="password" onchange="verificar()" name="password" id="password" class="form-control" placeholder="Password">
+                        <input type="password" onchange="verificar()" id="password" class="form-control" placeholder="Password">
                     </div>
                     <div class="text-center">
                         <a href="#" class="forgot-password">Esqueceu-se da password?</a><br>
                     </div>
                     <div class="text-center mt-3">
-                        <a href="#" class="btn btn-primary">Iniciar Sessão</a>
+                        <button class="btn btn-primary" id="loginButton" onclick="login()">Iniciar Sessão</button>
                     </div>
+                    <b style="display: none;" id="errorMessage" class="d-flex justify-content-center mt-3">
+                        Preencha todos os campos!
+                    </b>
                     <div class="text-center mt-3">
-                        <span class="forgot-password">Ainda não possui conta? Registe-se <a href="#">aqui</a>.</span>
+                        <span class="forgot-password">Ainda não possui conta? Registe-se <a href="../Register/">aqui</a>.</span>
                     </div>
                 </div>
             </div>

@@ -13,34 +13,10 @@ h3 {
 .forgot-password {
 	font-size: 14px;
 }
-/* 
-.form_container {
-	margin-top: 80px;
-}
-.login_btn {
-	margin-top: 10px;
-	width: 100%;
-	background: #FFCC00 !important;
-	color: #0a48ad !important;
-}
-.login_btn:focus {
-	box-shadow: none !important;
-	outline: 0px !important;
-}
-.login_container {
-	padding: 0 2rem;
-}
-.input-group-text {
-	background: #FFCC00 !important;
-	color: #0a48ad !important;
-	border: 0 !important;
-	border-radius: 0.25rem 0 0 0.25rem !important;
-}
-.input_user, .input_pass:focus {
-	box-shadow: none !important;
-	outline: 1px !important;
-} */
 
-/* .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-	background-color: gray !important;
-} */
+#username_icon {
+	width: 15px;
+}
+#password_icon {
+	width: 15px;
+}
