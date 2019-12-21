@@ -42,8 +42,8 @@
         <br>
         <div class="d-flex justify-content-left">
             <div class="row">
-                <div class="card" width="512px" height="512px" style="background-color: lightblue;">
-                    <img src="../Imagens/bby-me-final.png" class="img-fluid" alt="João Sousa">
+                <div class="card" style="background-color: lightblue;">
+                    <img src="../Imagens/avatar-me.jpg" class="mx-auto" width="256px" height="256px" alt="João Sousa">
                     <hr>
                     <b class="text-center" id="team-me">João Sousa</b>
                     <b class="text-center" id="role-me">Front-End & Back-End Developer</b>
