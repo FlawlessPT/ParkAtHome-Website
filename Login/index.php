@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,11 +26,12 @@
     <!-- PAGE FUNCTIONS -->
     <script src="login.js?v=1.1"></script>
 </head>
+
 <body onload="hide()">
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <!-- CONTENT -->
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
         <div class="d-flex justify-content-center">
             <div class="card" style="width: 380px; padding-left: 25px; padding-right: 25px; padding-top: 20px">
                 <h3 class="card-title text-center mt-3">Iniciar Sessão: </h3>
