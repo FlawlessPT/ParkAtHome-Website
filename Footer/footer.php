@@ -1,4 +1,5 @@
-<footer class="footer bg-secondary text-white py-4 w-100" style="position: fixed; bottom: 0px;">
+<!-- style="position: fixed; bottom: 0px;" -->
+<footer class="footer bg-secondary text-white py-4 w-100" style="position: fixed; bottom: 0px;"><!-- REMOVE STYLE TAG -->
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
