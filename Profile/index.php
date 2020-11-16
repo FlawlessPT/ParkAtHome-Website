@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,6 +24,7 @@
 
     <!-- PAGE FUNCTIONS -->
 </head>
+
 <body>
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
@@ -30,6 +32,60 @@
     <div class="container" style="margin-top: 100px;">
         <h3>Perfil: </h3>
         <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nome">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Matrículas: </h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Matricula 1" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="far fa-list-alt" id="mat2_icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Matricula 2" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="far fa-list-alt" id="mat3_icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Matricula 3" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="far fa-list-alt" id="mat4_icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Matricula 4" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- FOOTER -->
     <?php include '../Footer/footer.php'; ?>

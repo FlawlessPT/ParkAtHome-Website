@@ -40,7 +40,7 @@ function inserir() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             if (this.responseText == 1) {
-                window.location.href = "accountCreated.php"
+                window.location.href = "accountCreated.php";
                 document.getElementById("nome") = '';
                 document.getElementById("email") = '';
                 document.getElementById("numeroTelefone") = '';
