@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5ba1753-8a29-4852-ba45-e6c570561e5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Park@Home.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Park@Home.iml" afterDir="false" />
+    <list default="true" id="a5ba1753-8a29-4852-ba45-e6c570561e5d" name="Default Changelist" comment="Small Updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Footer/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Footer/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Profile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/Register/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +57,16 @@
       <updated>1576161431130</updated>
       <workItem from="1576161435287" duration="191000" />
       <workItem from="1576161729146" duration="349000" />
-      <workItem from="1605526330775" duration="391000" />
+      <workItem from="1605526330775" duration="1188000" />
     </task>
+    <task id="LOCAL-00001" summary="Small Updates">
+      <created>1605526771431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605526771431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,10 +83,18 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Small Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Updates" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605526383558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605526383558" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1605526794512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605526794512" />
   </component>
 </project>
