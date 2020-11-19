@@ -28,7 +28,7 @@
             $servername = "localhost";
             $username = "root";
             $password = "";
-            $dbname = "ParkAtHome";
+            $dbname = "parkathome_web";
 
             // Cria a ligação à BD
             $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -42,12 +42,12 @@
             if (isset($_SESSION['userName'])) {
                 $loggedUser = $_SESSION['userName'];
 
-                $sql = "SELECT Nome FROM utilizadores WHERE NomeUtilizador='$loggedUser'";
+                $sql = "SELECT name FROM users WHERE username='$loggedUser'";
                 $result = mysqli_query($conn, $sql);
 
                 if ($result && mysqli_num_rows($result) > 0) {
                     if ($row = mysqli_fetch_assoc($result)) {
-                        $personName = $row['Nome'];
+                        $personName = $row['name'];
                     }
                 }
                 echo '<ul class="navbar-nav ml-auto">
