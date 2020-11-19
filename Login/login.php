@@ -2,10 +2,10 @@
 	$servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "ParkAtHome";
+    $dbname = "parkathome_web";
 	
-    $nomeUtilizador = $_GET['nomeUtilizador'];
-    $pw = sha1($_GET['password']);
+    $nomeUtilizador = $_GET['username'];
+    $pw = $_GET['password'];
 
     session_start();
     //echo $pw;
@@ -17,7 +17,7 @@
         die("Connection failed: " . mysqli_connect_error());
     }
  
-    $sql = "SELECT * FROM Utilizadores WHERE NomeUtilizador='$nomeUtilizador' AND Password='$pw'";
+    $sql = "SELECT * FROM Users WHERE username='$nomeUtilizador' AND password='$pw'";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['userName'] = $nomeUtilizador;

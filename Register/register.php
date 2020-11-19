@@ -2,18 +2,16 @@
 	$servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "ParkAtHome";
+    $dbname = "parkathome_web";
 	
     $nome = $_GET['nome'];
     $email = $_GET['email'];
-    $nif = $_GET['nif'];
     $telefone = $_GET['numeroTelefone'];
     $nomeUtilizador = $_GET['nomeUtilizador'];
-    $pw = sha1($_GET['password']);
-    $matricula1 = $_GET['matricula1'];
-    $matricula2 = $_GET['matricula2'];
-    $matricula3 = $_GET['matricula3'];
-    $matricula4 = $_GET['matricula4'];
+    $pw = $_GET['password'];
+
+    $name = $_GET['name'];
+    $plate = $_GET['plate'];
  
     // Cria a ligação à BD
     $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -22,10 +20,10 @@
         die("Connection failed: " . mysqli_connect_error());
     }
  
-    $sql = "INSERT INTO utilizadores (Nome, Email, NrTelemovel, NIF, NomeUtilizador, Password)
-        VALUES ('$nome', '$email', $telefone, $nif, '$nomeUtilizador', '$pw')";
-    $sql2 = "INSERT INTO matriculas (Matricula1, Matricula2, Matricula3, Matricula4, NomeUtilizador)
-        VALUES ('$matricula1', '$matricula2', '$matricula3', '$matricula4', '$nomeUtilizador')";
+    $sql = "INSERT INTO users (name, username, password, phoneNumber, email)
+        VALUES ('$name', '$nomeUtilizador', '$pw', '$email', $telefone)";
+    $sql2 = "INSERT INTO vehicules (name, plate, state, idUser)
+        VALUES ('$plateName', '$plate', '1', '$matricula4', '$nomeUtilizador')";
  
     if (mysqli_query($conn, $sql) && mysqli_query($conn, $sql2)) {
         echo true;
