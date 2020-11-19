@@ -34,54 +34,37 @@
         <hr>
         <div class="row">
             <div class="col-lg-6">
+                <label>Nome</label>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Nome">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
-                    </div>
+                </div>
+                <label>Email</label>
+                <div class="input-group mb-3">
+                    <input type="Email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <label>Contacto</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Contacto">
+                </div>
+                <label>Password</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
             </div>
         </div>
-        <h3>Matrículas: </h3>
-        <hr>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Matricula 1" disabled>
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat2_icon"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Matricula 2" disabled>
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat3_icon"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Matricula 3" disabled>
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat4_icon"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Matricula 4" disabled>
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-info"><i class="fas fa-edit"></i></button>
+        <div class="row" style="margin-left: 25%; margin-right: 25%">
+            <div class="col-lg">
+                <div class="w-100">
+                    <h3>Matrículas: </h3>
+
+                    <hr>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Matricula 1" disabled>
                     </div>
                 </div>
             </div>
