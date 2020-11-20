@@ -30,36 +30,50 @@
     <?php include '../Menu/menu.php'; ?>
     <!-- CONTENT -->
     <div class="container" style="margin-top: 100px;">
-        <h3>Perfil: </h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Perfil: </h3>
+            </div>
+            <div class="col-sm-6">
+                <button type="button" class="btn btn-primary float-right"><i class="fas fa-edit"></i></button>
+            </div>
+        </div>
         <hr>
         <div class="row">
             <div class="col-lg-6">
                 <label>Nome</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Nome">
+                    <input type="text" class="form-control" placeholder="Nome" disabled>
                 </div>
                 <label>Email</label>
                 <div class="input-group mb-3">
-                    <input type="Email" class="form-control" placeholder="Email">
+                    <input type="Email" class="form-control" placeholder="Email" disabled>
                 </div>
             </div>
             <div class="col-lg-6">
                 <label>Contacto</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Contacto">
+                    <input type="text" class="form-control" placeholder="Contacto" disabled>
                 </div>
                 <label>Password</label>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" disabled>
                 </div>
             </div>
         </div>
         <div class="row" style="margin-left: 25%; margin-right: 25%">
-            <div class="col-lg">
+            <div class="col-sm">
                 <div class="w-100">
-                    <h3>Matrículas: </h3>
-
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3>Matrículas: </h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
                     <hr>
+                    <label>Matricula 1:</label>
                     <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
