@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Android application to manage parking lots">
     <meta name="author" content="Flawless">
-    <link rel="icon" href="Imagens/IconSousa.png">
+    <link rel="icon" href="../Imagens/IconSousa.png">
     <title>ParkAtHome - Aplicação para Parques de Estacionamento</title>
 
     <!-- BOOTSTRAP LINKS-->
